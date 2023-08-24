@@ -1,0 +1,24 @@
+<p><b>THIS IS THE CURRENT MOVIE LIST!</b></p>
+
+<div class="wrapper" id="contactlist">
+    <table id="table">
+        <tr>
+            <th>Movie ID</th>
+            <th>Movie Title</th>
+            <th>Director</th>
+            <th>Genre</th>
+            <th>Length</th>
+            <th>Released</th>
+        </tr>
+        {{#each movies}}
+        <tr>
+            <td>{{this.id}}</td>
+            <td>{{this.title}}</td>
+            <td>{{this.director}}</td>
+            <td>{{this.genre}}</td>
+            <td>{{this.runtime}}</td>
+            <td>{{this.year}}</td>
+        </tr>
+        {{/each}}
+    </table>
+</div>

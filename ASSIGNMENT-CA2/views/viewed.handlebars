@@ -1,0 +1,33 @@
+<p><b>THIS IS THE DETAILED MOVIE INFO WITH TRAILER!</b></p>
+
+<div class="wrapper">
+    <table id="table">
+        <tr>
+            <th>Movie ID</th>
+            <th>Movie Title</th>
+            <th>Director</th>
+            <th>Genre</th>
+            <th>Length</th>
+            <th>Released</th>
+            <th>Trailer Link</th>
+        </tr>
+        {{#each movies}}
+        <tr>
+            <td>{{this.id}}</td>
+            <td>{{this.title}}</td>
+            <td>{{this.director}}</td>
+            <td>{{this.genre}}</td>
+            <td>{{this.runtime}}</td>
+            <td>{{this.year}}</td>
+            <td>{{this.trailer}}</td>
+        </tr>
+    </table>
+    <p><b>Movie Trailer:</b></p>
+    <iframe width="854" height="480"
+        src="https://www.youtube.com/embed/{{this.trailer}}?autoplay=1&mute=1">
+    </iframe>
+    {{/each}}
+
+</div>
+
+<p>To return to selecting, please go to the <a href="/view">view</a> page.</p>

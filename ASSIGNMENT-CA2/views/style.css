@@ -1,0 +1,68 @@
+body {
+    background-image: url("bg2.jpg");
+    background-color: #9c0e0e;
+}
+h1 {
+    text-align: center;
+    padding-top: 3%;
+    color: white;
+}
+p, label {
+    text-align: center;
+    padding-top: 1%;
+    color: white;
+}
+a {
+    color: red;
+    text-decoration: none;
+}
+img {
+    width: 100px;
+    height: 150px;
+    margin: 10px;
+    padding: 10px;
+}
+li {
+    display: inline;
+    padding: 1%;
+}
+input[type=text], select {
+    text-align: center;
+    width: 25%;
+    padding: 10px 10px;
+    margin: 5px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+  }
+
+.wrapper {
+    padding-top: 1%;
+    text-align: center;
+}
+.button {
+    position: absolute;
+    top: 50%;
+}
+
+table, th, td {
+    border: 1px solid black;
+}
+table#table {
+    width:50%; 
+    margin-left:25%; 
+    margin-right:25%;
+}
+th {
+    padding: 10px;
+    text-align: left;
+    color: white;
+}
+td {
+    padding: 10px;
+    text-align: left;
+    color: white;
+}
+tr:nth-child(even) {background: rgba(165, 54, 54, 0.5)}
+tr:nth-child(odd) {background: rgba(56, 50, 50, 0.5)}
